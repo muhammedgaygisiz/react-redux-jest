@@ -6,8 +6,9 @@ export function MaterialCounterWithButton({value = 0, onIncrement = () => {}, on
     const [localValue, setLocalValue] = useState(value);
 
     useEffect(() => {
+        console.log(value);
         setLocalValue(value);
-    })
+    }, [value])
 
     const increase = () => {
         setLocalValue(localValue + 1);

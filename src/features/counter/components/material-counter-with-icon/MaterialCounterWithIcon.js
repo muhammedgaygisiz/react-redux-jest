@@ -10,7 +10,7 @@ export function MaterialCounterWithIcon({value = 0, onIncrement = () => {}, onDe
 
     useEffect(() => {
         setLocalValue(value);
-    })
+    }, [value])
 
     const increase = () => {
         setLocalValue(localValue + 1);
