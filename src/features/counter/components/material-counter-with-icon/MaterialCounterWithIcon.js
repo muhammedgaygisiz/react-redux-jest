@@ -5,7 +5,7 @@ import RemoveCircle from '@material-ui/icons/RemoveCircle';
 import IconButton from '@material-ui/core/IconButton';
 
 
-export function MaterialCounterWithIcon({value = 0, onIncrement, onDecrement}) {
+export function MaterialCounterWithIcon({value = 0, onIncrement = () => {}, onDecrement = () => {}}) {
     const [localValue, setLocalValue] = useState(value);
 
     useEffect(() => {

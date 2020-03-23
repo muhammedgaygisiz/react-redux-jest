@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import styles from './MaterialCounterWithButton.module.css';
 import Button from '@material-ui/core/Button';
 
-export function MaterialCounterWithButton({value = 0, onIncrement, onDecrement}) {
+export function MaterialCounterWithButton({value = 0, onIncrement = () => {}, onDecrement = () => {}}) {
     const [localValue, setLocalValue] = useState(value);
 
     useEffect(() => {
