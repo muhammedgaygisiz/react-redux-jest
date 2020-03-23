@@ -1,9 +1,8 @@
 import React from 'react';
-import logo from './logo.svg';
-import { Counter } from './features';
-import { MaterialCounterWithButton, MaterialCounterWithIcon } from './components';
 import './App.css';
-import { StartPage } from './containers/start-page/StartPage';
+import { StartPage } from './features/counter/containers/start-page/StartPage';
+import { Counter } from './features';
+import logo from './logo.svg';
 
 function App() {
   return (

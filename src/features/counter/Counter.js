@@ -5,10 +5,10 @@ import {
   increment,
   incrementByAmount,
   incrementAsync,
-} from './counterSlice';
+} from './reducer';
 import {
   selectCount,
-} from '../../selectors'
+} from './selectors'
 import styles from './Counter.module.css';
 
 export function Counter() {

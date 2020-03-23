@@ -1,13 +1,16 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import styles from './MaterialCounterWithIcon.module.css';
 import AddCircle from '@material-ui/icons/AddCircle';
 import RemoveCircle from '@material-ui/icons/RemoveCircle';
 import IconButton from '@material-ui/core/IconButton';
-import { increment } from '../../features/counter/counterSlice';
 
 
 export function MaterialCounterWithIcon({value = 0, onIncrement, onDecrement}) {
     const [localValue, setLocalValue] = useState(value);
+
+    useEffect(() => {
+        setLocalValue(value);
+    })
 
     const increase = () => {
         setLocalValue(localValue + 1);

@@ -1,17 +1,15 @@
 import React from 'react';
+import { connect } from 'react-redux';
+import { decrement, increment } from '../../reducer';
 import { MaterialCounterWithButton, MaterialCounterWithIcon } from '../../components';
-import { useSelector, connect } from 'react-redux';
-import { selectCount } from '../../selectors'
-import { increment, decrement } from '../../actions'
 
 export function StartPage() {
-    const count = useSelector(selectCount);
 
-    const mapStateToProps = state => ({ value: state.counter.value });
+    const mapStateToProps = state => ({value: state.counter.value});
 
     const mapDispatchToProps = dispatch => ({
-        onIncrement: () => dispatch(increment),
-        onDecrement: () => dispatch(decrement)
+        onIncrement: () => dispatch(increment()),
+        onDecrement: () => dispatch(decrement())
     })
 
     const ConnectedCounterWithButton = connect(
