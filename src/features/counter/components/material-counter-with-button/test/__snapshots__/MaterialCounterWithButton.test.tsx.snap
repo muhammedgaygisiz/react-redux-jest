@@ -5,9 +5,7 @@ Object {
   "asFragment": [Function],
   "baseElement": <body>
     <div>
-      <div
-        class="row"
-      >
+      <div>
         <button
           class="MuiButtonBase-root MuiButton-root MuiButton-contained MuiButton-containedPrimary"
           tabindex="0"
@@ -22,9 +20,7 @@ Object {
             class="MuiTouchRipple-root"
           />
         </button>
-        <span
-          class="value"
-        >
+        <span>
           0
         </span>
         <button
@@ -45,9 +41,7 @@ Object {
     </div>
   </body>,
   "container": <div>
-    <div
-      class="row"
-    >
+    <div>
       <button
         class="MuiButtonBase-root MuiButton-root MuiButton-contained MuiButton-containedPrimary"
         tabindex="0"
@@ -62,9 +56,7 @@ Object {
           class="MuiTouchRipple-root"
         />
       </button>
-      <span
-        class="value"
-      >
+      <span>
         0
       </span>
       <button
