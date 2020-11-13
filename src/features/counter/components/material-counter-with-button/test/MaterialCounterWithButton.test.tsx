@@ -1,4 +1,3 @@
-import { Button } from '@material-ui/core';
 import { createShallow } from '@material-ui/core/test-utils';
 import { render } from '@testing-library/react';
 import React from 'react';
@@ -15,7 +14,7 @@ describe('Counter with Button', () => {
     });
 
     describe('when button is clicked', () => {
-        let shallow;
+        let shallow: any;
 
         beforeAll(() => {
             shallow = createShallow();
