@@ -5,7 +5,9 @@ import { MaterialCounterWithButton, MaterialCounterWithIcon } from '../../compon
 
 export function StartPage() {
 
-    const mapStateToProps = (state: any) => ({value: state.counter.value});
+    const mapStateToProps = (state: any) => ({
+        value: state.counter.value
+    });
 
     const mapDispatchToProps = (dispatch: any) => ({
         onIncrement: () => dispatch(increment()),
